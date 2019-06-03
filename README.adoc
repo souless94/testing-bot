@@ -1,0 +1,52 @@
+= Telegram bot EaT @Eatyummybot
+
+== Introduction
+This project was done to create functions in telegram to use easily. The bot is not hosted online.
+
+== functions
+=== bill
+* calculates prices after including a 7% gst and the service charge provided
+* Format: `/bill price [SERVICE_CHARGE]` + 
+
+Example : /bill 10 0.10
+****
+    Service Charge is in decimal place. 
+    eg. To calculate 10% service charge, key in 0.10 as the service charge input.
+    If no service charge is inputted,it will be assumed as 0% service charge.
+****
+
+=== question
+* ask a yes/no question
+* Format: `/question` + 
+
+Example : /question
+
+=== result
+* display the result of the question on who answered yes and who answered no
+* and their counts respectively
+* Format: `/result` + 
+
+Example : /result
+
+
+=== reset_poll
+* clears the result of the question on who answered yes and who answered no
+* and reset their counts respectively to 0
+* Format: `/reset_poll` + 
+
+Example : /reset_poll
+
+=== help
+* show all the commands the bot have.
+* Format: `/help`
+
+Example : /help
+
+== Contributors
+Chia Wen Kai, github: https://github.com/souless94[@souless94]
+
+Daniel Koh Chong Xiang, github: https://github.com/danielkoh94[@danielkoh94]
+
+== Acknowlegdements
+
+* Used the python pyTelegramBotAPI at https://github.com/eternnoir/pyTelegramBotAPI

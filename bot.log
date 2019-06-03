@@ -1,0 +1,1171 @@
+ 2019-01-04 20:26:35,509 - INFO - logging file
+ 2019-01-04 20:26:35,515 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:26:50,400 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 350
+ 2019-01-04 20:26:50,410 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:26:51,602 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=here+are+the+commands+%3A+bill%2Chelp&reply_to_message_id=98 HTTP/1.1" 200 577
+ 2019-01-04 20:26:55,675 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055859&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:26:55,687 - ERROR - TypeError occurred, args=("'NoneType' object is not subscriptable",)
+Traceback (most recent call last):
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 49, in send_bill
+    ans[0] = userInputs[0]
+TypeError: 'NoneType' object is not subscriptable
+
+ 2019-01-04 20:27:15,939 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055860&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:28:05,692 - INFO - logging file
+ 2019-01-04 20:28:05,695 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:28:10,376 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:28:10,382 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:28:11,669 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%240.0+with+a+service+charge+of+%240&reply_to_message_id=101 HTTP/1.1" 200 590
+ 2019-01-04 20:28:30,636 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055861&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:28:31,098 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055861&timeout=20 HTTP/1.1" 200 354
+ 2019-01-04 20:28:31,102 - ERROR - TypeError occurred, args=("type str doesn't define __round__ method",)
+Traceback (most recent call last):
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 56, in send_bill
+    amount = round(ans[0],2)
+TypeError: type str doesn't define __round__ method
+
+ 2019-01-04 20:28:51,360 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055862&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:28:53,351 - INFO - logging file
+ 2019-01-04 20:28:53,353 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:28:57,955 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 354
+ 2019-01-04 20:28:57,961 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:28:59,162 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%2410.7+with+a+service+charge+of+%240.0&reply_to_message_id=104 HTTP/1.1" 200 596
+ 2019-01-04 20:29:11,997 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055863&timeout=20 HTTP/1.1" 200 359
+ 2019-01-04 20:29:12,456 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%2411.7+with+a+service+charge+of+%241.0&reply_to_message_id=106 HTTP/1.1" 200 601
+ 2019-01-04 20:29:18,290 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055864&timeout=20 HTTP/1.1" 200 361
+ 2019-01-04 20:29:18,294 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:29:19,488 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=invalid+input&reply_to_message_id=108 HTTP/1.1" 200 569
+ 2019-01-04 20:29:25,337 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055865&timeout=20 HTTP/1.1" 200 359
+ 2019-01-04 20:29:25,793 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=invalid+input&reply_to_message_id=110 HTTP/1.1" 200 567
+ 2019-01-04 20:29:31,328 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055866&timeout=20 HTTP/1.1" 200 358
+ 2019-01-04 20:29:31,778 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=invalid+input&reply_to_message_id=112 HTTP/1.1" 200 566
+ 2019-01-04 20:29:37,549 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055867&timeout=20 HTTP/1.1" 200 366
+ 2019-01-04 20:29:38,000 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=invalid+input&reply_to_message_id=114 HTTP/1.1" 200 574
+ 2019-01-04 20:29:42,096 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055868&timeout=20 HTTP/1.1" 200 360
+ 2019-01-04 20:29:42,552 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%24132.77+with+a+service+charge+of+%24121.0&reply_to_message_id=116 HTTP/1.1" 200 606
+ 2019-01-04 20:30:02,346 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055869&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:30:02,593 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055869&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:30:03,050 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%240.0+with+a+service+charge+of+%240.0&reply_to_message_id=118 HTTP/1.1" 200 592
+ 2019-01-04 20:30:05,827 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055870&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:30:06,283 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%240.0+with+a+service+charge+of+%240.0&reply_to_message_id=120 HTTP/1.1" 200 592
+ 2019-01-04 20:30:23,222 - INFO - logging file
+ 2019-01-04 20:30:23,225 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:30:24,254 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055871&timeout=20 HTTP/1.1" 409 143
+ 2019-01-04 20:30:24,266 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-01-04 20:30:26,707 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:30:26,716 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:30:27,913 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%240.0+with+a+service+charge+of+%240.0&reply_to_message_id=122 HTTP/1.1" 200 592
+ 2019-01-04 20:30:46,972 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055872&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:31:34,435 - INFO - logging file
+ 2019-01-04 20:31:34,438 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:31:39,508 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:31:39,516 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:31:40,720 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%240.0+with+a+service+charge+of+%240.0&reply_to_message_id=124 HTTP/1.1" 200 592
+ 2019-01-04 20:31:59,757 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055873&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:32:09,680 - INFO - logging file
+ 2019-01-04 20:32:09,683 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:32:10,679 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055873&timeout=20 HTTP/1.1" 409 143
+ 2019-01-04 20:32:10,680 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\wen kai\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-01-04 20:32:13,625 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-01-04 20:32:13,633 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-01-04 20:32:14,870 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=amount+is+%3A+%240.0+with+a+service+charge+of+%240.0&reply_to_message_id=126 HTTP/1.1" 200 592
+ 2019-01-04 20:32:33,885 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055874&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:32:54,145 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055874&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:33:14,404 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055874&timeout=20 HTTP/1.1" 200 23
+ 2019-01-04 20:33:34,662 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055874&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:50:06,321 - INFO - logging file
+ 2019-03-28 18:50:06,352 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:50:24,031 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-03-28 18:50:24,038 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:50:25,248 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Hihi&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22result1%22%2C+%22callback_data%22%3A+%22data1%22%7D%5D%5D%7D HTTP/1.1" 200 236
+ 2019-03-28 18:50:27,270 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055899&timeout=20 HTTP/1.1" 200 473
+ 2019-03-28 18:50:27,278 - ERROR - AttributeError occurred, args=("'CallbackQuery' object has no attribute 'chat_id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 75, in test_callback
+    bot.send_message(call.chat_id,"test")
+AttributeError: 'CallbackQuery' object has no attribute 'chat_id'
+
+ 2019-03-28 18:50:31,011 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055900&timeout=20 HTTP/1.1" 200 473
+ 2019-03-28 18:50:31,013 - ERROR - AttributeError occurred, args=("'CallbackQuery' object has no attribute 'chat_id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 75, in test_callback
+    bot.send_message(call.chat_id,"test")
+AttributeError: 'CallbackQuery' object has no attribute 'chat_id'
+
+ 2019-03-28 18:51:08,550 - INFO - logging file
+ 2019-03-28 18:51:08,554 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:51:09,561 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 2728
+ 2019-03-28 18:51:29,834 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:51:50,088 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:52:10,337 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:52:30,591 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:52:50,843 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:53:11,094 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:53:14,064 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055906&timeout=20 HTTP/1.1" 200 351
+ 2019-03-28 18:53:14,074 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:53:15,285 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Hihi&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22result1%22%2C+%22callback_data%22%3A+%22data1%22%7D%5D%5D%7D HTTP/1.1" 200 236
+ 2019-03-28 18:53:16,474 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055907&timeout=20 HTTP/1.1" 200 473
+ 2019-03-28 18:53:35,608 - INFO - logging file
+ 2019-03-28 18:53:35,610 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:53:36,628 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055908&timeout=20 HTTP/1.1" 409 143
+ 2019-03-28 18:53:36,644 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-28 18:53:47,863 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-03-28 18:53:47,871 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:53:49,089 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Hihi&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22result1%22%2C+%22callback_data%22%3A+%22data1%22%7D%5D%5D%7D HTTP/1.1" 200 236
+ 2019-03-28 18:53:50,427 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055909&timeout=20 HTTP/1.1" 200 473
+ 2019-03-28 18:53:50,433 - ERROR - AttributeError occurred, args=("'CallbackQuery' object has no attribute 'callback_query_id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 76, in test_callback
+    bot.answer_callback_query(call.callback_query_id,text="test")
+AttributeError: 'CallbackQuery' object has no attribute 'callback_query_id'
+
+ 2019-03-28 18:54:10,677 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055910&timeout=20 HTTP/1.1" 200 23
+ 2019-03-28 18:54:33,918 - INFO - logging file
+ 2019-03-28 18:54:33,921 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:54:38,049 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-03-28 18:54:38,058 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-28 18:54:39,252 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Hihi&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22result1%22%2C+%22callback_data%22%3A+%22data1%22%7D%5D%5D%7D HTTP/1.1" 200 236
+ 2019-03-28 18:54:40,423 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055911&timeout=20 HTTP/1.1" 200 473
+ 2019-03-28 18:54:40,432 - ERROR - TypeError occurred, args=("answer_callback_query() missing 1 required positional argument: 'callback_query_id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 76, in test_callback
+    bot.answer_callback_query(text="test")
+TypeError: answer_callback_query() missing 1 required positional argument: 'callback_query_id'
+
+ 2019-03-28 18:55:00,679 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055912&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:52:22,106 - INFO - logging file
+ 2019-03-29 09:52:22,110 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:52:40,287 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-03-29 09:52:40,296 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:52:41,525 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Hihi&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22result1%22%2C+%22callback_data%22%3A+%22data1%22%7D%5D%5D%7D HTTP/1.1" 200 236
+ 2019-03-29 09:52:45,672 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055913&timeout=20 HTTP/1.1" 200 473
+ 2019-03-29 09:52:46,116 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103657525647993&text=test HTTP/1.1" 200 25
+ 2019-03-29 09:53:05,929 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055914&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:53:08,177 - INFO - logging file
+ 2019-03-29 09:53:08,179 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:53:12,492 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-03-29 09:53:12,503 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:53:13,702 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Hihi&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22result1%22%2C+%22callback_data%22%3A+%22data1%22%7D%5D%5D%7D HTTP/1.1" 200 236
+ 2019-03-29 09:53:14,487 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055915&timeout=20 HTTP/1.1" 200 473
+ 2019-03-29 09:53:14,494 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:53:15,726 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103658906159380&text=test HTTP/1.1" 200 25
+ 2019-03-29 09:53:34,734 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055916&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:53:54,978 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055916&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:54:15,223 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055916&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:54:35,464 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055916&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:54:55,708 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055916&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:55:17,698 - INFO - logging file
+ 2019-03-29 09:55:17,702 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:55:23,011 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 351
+ 2019-03-29 09:55:23,023 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:55:24,217 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 09:55:25,999 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055917&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 09:55:26,003 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 09:55:27,176 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659944532681&text=your+answer+is+yes HTTP/1.1" 200 25
+ 2019-03-29 09:55:28,783 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055918&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 09:55:29,217 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103657193800315&text=your+answer+is+no HTTP/1.1" 200 25
+ 2019-03-29 09:55:30,819 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055919&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 09:55:31,253 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103656414743090&text=your+answer+is+yes HTTP/1.1" 200 25
+ 2019-03-29 09:55:51,063 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:56:11,310 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:56:31,558 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:56:51,801 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:57:12,043 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:57:32,288 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:57:52,536 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:58:12,785 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:58:33,030 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:58:53,278 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:59:13,523 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:59:33,768 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 09:59:54,013 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:00:14,261 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:00:34,511 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:00:54,759 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:01:15,002 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:01:35,249 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:01:55,488 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:02:15,730 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:02:35,972 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:02:56,222 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055920&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:38:11,729 - INFO - logging file
+ 2019-03-29 10:38:11,758 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:38:17,698 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:38:17,709 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:38:19,318 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:38:20,841 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055938&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:38:20,848 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:38:22,210 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=3012103659868911796&text=ok+noted1 HTTP/1.1" 400 73
+ 2019-03-29 10:38:22,224 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 79, in test_callback
+    bot.send_message(query.id, "ok noted" + str(ans))
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 598, in send_message
+    reply_markup, parse_mode, disable_notification))
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 140, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}']
+
+ 2019-03-29 10:38:22,226 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}']
+ 2019-03-29 10:38:41,169 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055939&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:38:56,412 - INFO - logging file
+ 2019-03-29 10:38:56,415 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:02,263 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:39:02,266 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:03,567 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:39:04,262 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055940&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:39:04,267 - ERROR - AttributeError occurred, args=("'Message' object has no attribute 'id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 79, in test_callback
+    bot.send_message(query.message.id, "ok noted" + str(ans))
+AttributeError: 'Message' object has no attribute 'id'
+
+ 2019-03-29 10:39:16,749 - INFO - logging file
+ 2019-03-29 10:39:16,752 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:18,065 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055941&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 10:39:18,067 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 10:39:21,348 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:39:21,359 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:22,886 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:39:23,672 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055942&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:39:23,679 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:25,178 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+noted1 HTTP/1.1" 200 241
+ 2019-03-29 10:39:44,004 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055943&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:39:45,421 - INFO - logging file
+ 2019-03-29 10:39:45,424 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:51,427 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:39:51,436 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:52,998 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:39:53,883 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055944&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:39:53,891 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:39:55,407 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+noted1 HTTP/1.1" 200 241
+ 2019-03-29 10:40:14,188 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055945&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:40:34,494 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055945&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:40:54,830 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055945&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:41:15,144 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055945&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:43:16,439 - INFO - logging file
+ 2019-03-29 10:43:16,441 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:43:21,182 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:43:21,192 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:43:22,584 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:43:24,099 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055946&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:43:24,105 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:43:25,669 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+noted1 HTTP/1.1" 200 241
+ 2019-03-29 10:43:44,403 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055947&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:43:57,455 - INFO - logging file
+ 2019-03-29 10:43:57,458 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:43:58,619 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055947&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 10:43:58,620 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 10:44:01,774 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:44:01,784 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:44:03,360 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:44:04,212 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055948&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:44:04,216 - ERROR - AttributeError occurred, args=("'Chat' object has no attribute 'from_user'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 77, in test_callback
+    name = query.message.chat.from_user.first_name
+AttributeError: 'Chat' object has no attribute 'from_user'
+
+ 2019-03-29 10:44:24,541 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055949&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:47:02,866 - INFO - logging file
+ 2019-03-29 10:47:02,869 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:47:10,724 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:47:10,735 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:47:11,927 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:47:12,549 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055950&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:47:12,558 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:47:13,771 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+noted1 HTTP/1.1" 200 241
+ 2019-03-29 10:47:32,799 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055951&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:47:53,046 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055951&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:47:56,934 - INFO - logging file
+ 2019-03-29 10:47:56,938 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:47:57,967 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055951&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 10:47:57,970 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 10:48:01,474 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 10:48:01,478 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:48:02,681 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%221%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%222%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 10:48:03,564 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055952&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:48:03,567 - ERROR - AttributeError occurred, args=("'str' object has no attribute 'message'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 77, in test_callback
+    name = ans.message.from_user.username
+AttributeError: 'str' object has no attribute 'message'
+
+ 2019-03-29 10:48:23,817 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055953&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:48:48,013 - INFO - logging file
+ 2019-03-29 10:48:48,016 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:48:51,431 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:48:51,435 - ERROR - NameError occurred, args=("name 'update' is not defined",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 77, in test_callback
+    name = update.message.from_user.username
+NameError: name 'update' is not defined
+
+ 2019-03-29 10:49:11,677 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055954&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:51:25,464 - INFO - logging file
+ 2019-03-29 10:51:25,467 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:51:30,341 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:51:30,350 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:51:31,603 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+noted1 HTTP/1.1" 200 241
+ 2019-03-29 10:51:50,595 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055955&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:52:09,645 - INFO - logging file
+ 2019-03-29 10:52:09,648 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:52:10,659 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055955&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 10:52:10,662 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 10:52:11,929 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:52:11,931 - ERROR - AttributeError occurred, args=("'CallbackQuery' object has no attribute 'chat'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 77, in test_callback
+    name = query.chat.first_name
+AttributeError: 'CallbackQuery' object has no attribute 'chat'
+
+ 2019-03-29 10:52:23,467 - INFO - logging file
+ 2019-03-29 10:52:23,470 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:52:24,460 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055956&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 10:52:24,461 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 10:52:34,214 - INFO - logging file
+ 2019-03-29 10:52:34,217 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:52:35,244 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 10:52:35,245 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 10:52:38,687 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 10:52:38,692 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:52:39,880 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+noted1 HTTP/1.1" 200 241
+ 2019-03-29 10:52:58,937 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:53:19,194 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:53:39,458 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:53:59,706 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:54:19,958 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:54:40,210 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:55:00,464 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:55:20,716 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:55:40,966 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:56:01,213 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:56:21,465 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:56:41,713 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:57:01,965 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055957&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 10:59:30,223 - INFO - logging file
+ 2019-03-29 10:59:30,226 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:59:44,121 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 10:59:44,131 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 10:59:45,939 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=People+replied+%3A+0 HTTP/1.1" 200 250
+ 2019-03-29 11:00:03,705 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055958&timeout=20 HTTP/1.1" 200 484
+ 2019-03-29 11:00:16,407 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055959&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:00:16,940 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:00:17,773 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055960&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:00:39,095 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055961&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:00:47,160 - INFO - logging file
+ 2019-03-29 11:00:47,163 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:00:48,183 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055961&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:00:48,186 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:00:55,108 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:00:55,121 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:01:00,230 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:01:01,292 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055962&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:01:21,539 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055963&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:01:40,995 - INFO - logging file
+ 2019-03-29 11:01:40,997 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:01:41,785 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055963&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:01:47,952 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:01:47,955 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:01:49,175 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:01:50,226 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055964&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:02:10,471 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055965&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:02:30,723 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055965&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:02:50,973 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055965&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:02:52,657 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055965&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:03:00,091 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055966&timeout=20 HTTP/1.1" 200 485
+ 2019-03-29 11:03:20,338 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055967&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:03:51,002 - INFO - logging file
+ 2019-03-29 11:03:51,005 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:03:54,501 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:04:14,742 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055968&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:04:22,214 - INFO - logging file
+ 2019-03-29 11:04:22,217 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:04:23,228 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055968&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:04:23,229 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:04:25,547 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:04:34,199 - INFO - logging file
+ 2019-03-29 11:04:34,202 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:04:35,191 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055969&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:04:35,194 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:04:41,132 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:04:41,135 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:04:42,337 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:04:43,229 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055970&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:05:02,955 - INFO - logging file
+ 2019-03-29 11:05:02,958 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:05:03,470 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055971&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:05:08,507 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:05:08,510 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:05:09,718 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:05:10,436 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055972&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:05:30,684 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055973&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:05:32,306 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055973&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:05:47,714 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055974&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:05:48,167 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=People+replied+%3A+0 HTTP/1.1" 200 250
+ 2019-03-29 11:06:02,943 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055975&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:06:02,946 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:06:04,206 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:06:05,214 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055976&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:06:25,462 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055977&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:06:45,711 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055977&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:06:53,550 - INFO - logging file
+ 2019-03-29 11:06:53,553 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:06:54,572 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055977&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:06:54,574 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:06:58,066 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:06:58,074 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:06:59,294 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+notedyes HTTP/1.1" 200 243
+ 2019-03-29 11:07:10,146 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055978&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:07:10,614 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=People+replied+%3A+0 HTTP/1.1" 200 250
+ 2019-03-29 11:07:30,402 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055979&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:07:44,364 - INFO - logging file
+ 2019-03-29 11:07:44,367 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:07:45,332 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055979&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:07:45,334 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:07:50,178 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:07:50,182 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:07:51,415 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:07:52,460 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055980&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:07:52,464 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:07:53,682 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=ok+notedyes HTTP/1.1" 200 243
+ 2019-03-29 11:07:59,123 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055981&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:07:59,574 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+yes+%0APeople+replied+%3A+1 HTTP/1.1" 200 266
+ 2019-03-29 11:08:19,360 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055982&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:09:21,865 - INFO - logging file
+ 2019-03-29 11:09:21,868 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:09:27,427 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:09:27,431 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:09:28,640 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:09:29,464 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055983&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:09:29,918 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=701310033&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 400 75
+ 2019-03-29 11:09:29,921 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: QUERY_ID_INVALID"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 79, in test_callback
+    bot.answer_callback_query(query.message.chat.id , text = "ok noted your answer is: " + str(ans))
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 1093, in answer_callback_query
+    return apihelper.answer_callback_query(self.token, callback_query_id, text, show_alert, url, cache_time)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 867, in answer_callback_query
+    return _make_request(token, method_url, params=payload, method='post')
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: QUERY_ID_INVALID"}']
+
+ 2019-03-29 11:09:29,925 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: QUERY_ID_INVALID"}']
+ 2019-03-29 11:09:44,081 - INFO - logging file
+ 2019-03-29 11:09:44,084 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:09:45,101 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055984&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:09:45,104 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:09:53,358 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 11:09:53,366 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:09:54,545 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 11:09:55,276 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055985&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:09:55,712 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103660382039210&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:09:58,930 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055986&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:09:58,939 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:10:00,172 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+yes+%0APeople+replied+%3A+1 HTTP/1.1" 200 266
+ 2019-03-29 11:10:02,226 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055987&timeout=20 HTTP/1.1" 200 485
+ 2019-03-29 11:10:02,670 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103660035647275&text=ok+noted+your+answer+is%3A+no HTTP/1.1" 200 25
+ 2019-03-29 11:10:06,020 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055988&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:10:06,473 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+no+%0APeople+replied+%3A+1 HTTP/1.1" 200 265
+ 2019-03-29 11:10:26,269 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055989&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:10:46,524 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055989&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:11:06,773 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055989&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:12:31,337 - INFO - logging file
+ 2019-03-29 11:12:31,340 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:12:41,903 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:12:41,907 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:12:43,068 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659551635591&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:12:48,987 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055990&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:12:49,414 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659598649223&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:12:52,901 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055991&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:12:52,908 - ERROR - TypeError occurred, args=("'function' object is not iterable",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 86, in display_result
+    positive_answer = list(map(history.values(),lambda x : x == "yes"))
+TypeError: 'function' object is not iterable
+
+ 2019-03-29 11:13:13,156 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055992&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:13:23,111 - INFO - logging file
+ 2019-03-29 11:13:23,114 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:13:27,650 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:13:27,668 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:13:28,889 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=People+replied+%3A+0 HTTP/1.1" 200 250
+ 2019-03-29 11:13:37,566 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055993&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:13:37,569 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:13:38,771 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103656830171412&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:13:41,401 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055994&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:13:41,855 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+yes+%0APeople+replied+%3A+1 HTTP/1.1" 200 266
+ 2019-03-29 11:14:01,648 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055995&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:14:05,882 - INFO - logging file
+ 2019-03-29 11:14:05,885 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:14:06,886 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055995&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:14:06,888 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:14:11,314 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:14:11,321 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:14:12,655 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103657945884757&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:14:15,358 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055996&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:14:15,373 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:14:16,583 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+yes+%0APeople+replied+%3A+1 HTTP/1.1" 200 266
+ 2019-03-29 11:14:35,615 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055997&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:14:55,862 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055997&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:15:16,102 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055997&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:15:19,884 - INFO - logging file
+ 2019-03-29 11:15:19,887 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:15:20,953 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055997&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:15:20,956 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:15:24,402 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 485
+ 2019-03-29 11:15:24,405 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:15:25,591 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659542973637&text=ok+noted+your+answer+is%3A+no HTTP/1.1" 200 25
+ 2019-03-29 11:15:27,669 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055998&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:15:27,677 - ERROR - TypeError occurred, args=("'function' object is not iterable",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 87, in display_result
+    positive =list(map( positive_answer, lambda x : x == "yes"))
+TypeError: 'function' object is not iterable
+
+ 2019-03-29 11:15:47,937 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97055999&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:17:35,530 - INFO - logging file
+ 2019-03-29 11:17:35,533 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:17:40,532 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:17:40,537 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:17:41,727 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659641801493&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:17:44,458 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056000&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:17:44,476 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:17:45,735 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+yes+%0APeople+replied+%3A+1 HTTP/1.1" 200 266
+ 2019-03-29 11:17:56,799 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056001&timeout=20 HTTP/1.1" 200 485
+ 2019-03-29 11:17:57,235 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103660110252974&text=ok+noted+your+answer+is%3A+no HTTP/1.1" 200 25
+ 2019-03-29 11:17:59,695 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056002&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:18:00,157 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+no+%0APeople+replied+%3A+1 HTTP/1.1" 200 265
+ 2019-03-29 11:18:19,955 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056003&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:20:30,415 - INFO - logging file
+ 2019-03-29 11:20:30,418 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:20:34,722 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 11:20:34,725 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:20:35,887 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103656546161631&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 11:20:38,180 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056004&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:20:38,633 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Wen+Kai+%09+yes+%0A------------------+%0APeople+replied+%3A+1+%0APeople+agreed+%3A+1+%09+People+disagreed+%3A+0+%0A HTTP/1.1" 200 330
+ 2019-03-29 11:20:58,433 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056005&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:21:05,617 - INFO - logging file
+ 2019-03-29 11:21:05,620 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:21:06,641 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056005&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 11:21:06,642 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 11:21:11,501 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 353
+ 2019-03-29 11:21:11,508 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 11:21:12,718 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=------------------+%0APeople+replied+%3A+0+%0APeople+agreed+%3A+0+%7C+People+disagreed+%3A+0+%0A HTTP/1.1" 200 314
+ 2019-03-29 11:21:31,754 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:21:52,006 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:22:12,260 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:22:32,512 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:22:52,763 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:23:13,017 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:23:33,268 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 11:23:53,521 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056006&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:16:53,767 - INFO - logging file
+ 2019-03-29 17:16:53,798 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:17:14,826 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:17:29,682 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 17:17:29,691 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:17:30,943 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 17:17:32,068 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056038&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:17:32,072 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:17:33,314 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103656246034381&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:17:33,320 - ERROR - NameError occurred, args=("name 'message' is not defined",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(message.message_id,text = "your answer is")
+NameError: name 'message' is not defined
+
+ 2019-03-29 17:17:52,311 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056039&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:17:53,574 - INFO - logging file
+ 2019-03-29 17:17:53,577 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:17:56,993 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:17:56,997 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:17:58,171 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103658702509433&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:17:58,172 - ERROR - AttributeError occurred, args=("'CallbackQuery' object has no attribute 'message_id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(query.message_id,text = "your answer is")
+AttributeError: 'CallbackQuery' object has no attribute 'message_id'
+
+ 2019-03-29 17:18:17,245 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056040&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:18:33,775 - INFO - logging file
+ 2019-03-29 17:18:33,779 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:18:36,613 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:18:36,617 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:18:37,815 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103658429482652&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:18:37,816 - ERROR - AttributeError occurred, args=("'Message' object has no attribute 'message'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(query.message.message.id,text = "your answer is")
+AttributeError: 'Message' object has no attribute 'message'
+
+ 2019-03-29 17:18:46,069 - INFO - logging file
+ 2019-03-29 17:18:46,072 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:18:47,085 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056041&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 17:18:47,092 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 17:18:49,857 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:18:49,862 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:18:51,043 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659397462555&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:18:51,047 - ERROR - AttributeError occurred, args=("'Message' object has no attribute 'id'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(query.message.id,text = "your answer is")
+AttributeError: 'Message' object has no attribute 'id'
+
+ 2019-03-29 17:19:10,108 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056042&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:19:19,564 - INFO - logging file
+ 2019-03-29 17:19:19,567 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:19:22,451 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:19:22,455 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:19:23,720 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103658701891642&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:19:23,723 - ERROR - TypeError occurred, args=("edit_message_text() got multiple values for argument 'text'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(query.message.message_id,text = "your answer is")
+TypeError: edit_message_text() got multiple values for argument 'text'
+
+ 2019-03-29 17:19:42,698 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056043&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:19:53,258 - INFO - logging file
+ 2019-03-29 17:19:53,261 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:19:56,148 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:19:56,153 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:19:57,347 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103657015577044&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:19:57,349 - ERROR - TypeError occurred, args=("edit_message_text() got multiple values for argument 'text'",)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(query.message.message_id,query.id,text = "your answer is")
+TypeError: edit_message_text() got multiple values for argument 'text'
+
+ 2019-03-29 17:20:16,401 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056044&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:21:35,035 - INFO - logging file
+ 2019-03-29 17:21:35,038 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:21:41,379 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:21:41,385 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:21:42,598 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103657522413416&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:21:42,850 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/editMessageText?text=your+answer+is&message_id=287 HTTP/1.1" 400 75
+ 2019-03-29 17:21:42,855 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(text= "your answer is",message_id = query.message.message_id)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 996, in edit_message_text
+    disable_web_page_preview, reply_markup)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 621, in edit_message_text
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}']
+
+ 2019-03-29 17:21:42,858 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}']
+ 2019-03-29 17:21:56,063 - INFO - logging file
+ 2019-03-29 17:21:56,067 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:21:57,070 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056045&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 17:21:57,073 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 17:22:00,681 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:22:00,688 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:22:01,852 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659487500975&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:22:02,093 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/editMessageText?text=your+answer+is&message_id=287 HTTP/1.1" 400 75
+ 2019-03-29 17:22:02,094 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(text= "your answer is",message_id = query.message.message_id)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 996, in edit_message_text
+    disable_web_page_preview, reply_markup)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 621, in edit_message_text
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}']
+
+ 2019-03-29 17:22:02,098 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}']
+ 2019-03-29 17:22:20,932 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056046&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:22:33,850 - INFO - logging file
+ 2019-03-29 17:22:33,853 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:22:36,715 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:22:36,720 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:22:37,899 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103657576812035&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:22:38,139 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/editMessageText?text=your+answer+is&chat_id=3012103657576812035&message_id=287 HTTP/1.1" 400 73
+ 2019-03-29 17:22:38,140 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(text= "your answer is",chat_id = query.id,message_id = query.message.message_id)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 996, in edit_message_text
+    disable_web_page_preview, reply_markup)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 621, in edit_message_text
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}']
+
+ 2019-03-29 17:22:38,144 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}']
+ 2019-03-29 17:22:41,846 - INFO - logging file
+ 2019-03-29 17:22:41,849 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:22:42,847 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056047&timeout=20 HTTP/1.1" 409 143
+ 2019-03-29 17:22:42,847 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:\n[b\'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 276, in __retrieve_updates
+    updates = self.get_updates(offset=(self.last_update_id + 1), timeout=timeout)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 246, in get_updates
+    json_updates = apihelper.get_updates(self.token, offset, limit, timeout, allowed_updates)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 180, in get_updates
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 409 Conflict. Response body:
+[b'{"ok":false,"error_code":409,"description":"Conflict: terminated by other getUpdates request; make sure that only one bot instance is running"}']
+
+ 2019-03-29 17:22:46,794 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 355
+ 2019-03-29 17:22:46,805 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:22:47,994 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/sendMessage?chat_id=701310033&text=Are+you+interested%3F&reply_markup=%7B%22inline_keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22yes%22%2C+%22callback_data%22%3A+%22yes%22%7D%5D%2C+%5B%7B%22text%22%3A+%22no%22%2C+%22callback_data%22%3A+%22no%22%7D%5D%5D%7D HTTP/1.1" 200 251
+ 2019-03-29 17:22:48,627 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056048&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:22:48,630 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:22:49,812 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103659915223178&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:22:50,058 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/editMessageText?text=your+answer+is&chat_id=3012103659915223178&message_id=289 HTTP/1.1" 400 73
+ 2019-03-29 17:22:50,060 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(text= "your answer is",chat_id = query.id,message_id = query.message.message_id)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 996, in edit_message_text
+    disable_web_page_preview, reply_markup)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 621, in edit_message_text
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}']
+
+ 2019-03-29 17:22:50,064 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat not found"}']
+ 2019-03-29 17:23:08,876 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056049&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:23:48,052 - INFO - logging file
+ 2019-03-29 17:23:48,054 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:23:54,135 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:23:54,140 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:23:55,341 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103658785092265&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:23:55,591 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/editMessageText?text=your+answer+is&message_id=289 HTTP/1.1" 400 75
+ 2019-03-29 17:23:55,592 - ERROR - ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b\'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}\']',)
+Traceback (most recent call last):
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\util.py", line 59, in run
+    task(*args, **kwargs)
+  File "C:/Users/wen kai/Downloads/python_projects/telebot/src/bot.py", line 81, in test_callback
+    bot.edit_message_text(text= "your answer is",message_id = query.message.message_id)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\__init__.py", line 996, in edit_message_text
+    disable_web_page_preview, reply_markup)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 621, in edit_message_text
+    return _make_request(token, method_url, params=payload)
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 56, in _make_request
+    return _check_result(method_name, result)['result']
+  File "C:\Users\WENKAI~1\Anaconda3\lib\site-packages\telebot\apihelper.py", line 75, in _check_result
+    raise ApiException(msg, method_name, result)
+telebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}']
+
+ 2019-03-29 17:23:55,595 - ERROR - A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:
+[b'{"ok":false,"error_code":400,"description":"Bad Request: chat_id is empty"}']
+ 2019-03-29 17:24:14,385 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056050&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:24:28,861 - INFO - logging file
+ 2019-03-29 17:24:28,864 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:24:30,794 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 486
+ 2019-03-29 17:24:30,801 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+ 2019-03-29 17:24:31,991 - DEBUG - https://api.telegram.org:443 "POST /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/answerCallbackQuery?callback_query_id=3012103660011989556&text=ok+noted+your+answer+is%3A+yes HTTP/1.1" 200 25
+ 2019-03-29 17:24:32,450 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/editMessageText?text=your+answer+is&chat_id=701310033&message_id=289 HTTP/1.1" 200 269
+ 2019-03-29 17:24:51,048 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056051&timeout=20 HTTP/1.1" 200 23
+ 2019-03-29 17:25:11,302 - DEBUG - https://api.telegram.org:443 "GET /bot691797701:AAH084HaUhpIfcV7FywRvwRUa8rQgAaxi8E/getUpdates?offset=97056051&timeout=20 HTTP/1.1" 200 23
