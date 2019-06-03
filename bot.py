@@ -111,7 +111,7 @@ def get_message():
 @heroku_server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook("https://teleboteat.herokuapp.com/"+token)
+    bot.set_webhook("https://telebotfin.herokuapp.com/"+token)
     return "!",200
 
 if __name__ == "__main__":
