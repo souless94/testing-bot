@@ -74,7 +74,7 @@ def get_answer(message):
     rm = types.InlineKeyboardMarkup()
     UserInput = extract_args(message.text)
     UserInput.extend([""])
-    name = UserInput[0]
+    name = UserInput.join()
     rm.add(types.InlineKeyboardButton("on the way", callback_data="on the way"))
     rm.add(types.InlineKeyboardButton("still at home", callback_data="still at home"))
     rm.add(types.InlineKeyboardButton("not coming", callback_data="not coming"))
@@ -87,7 +87,7 @@ def test_callback(query):
     name = query.from_user.first_name
     history[str(name)] =str(ans)
     bot.answer_callback_query(query.id , text = "eh i am {} and i am ".format(name) + str(ans))
-    bot.edit_message_text(text= "your answer is : " + str(ans),chat_id =query.message.chat.id ,message_id = query.message.message_id)
+    bot.edit_message_text(text= "eh i am {} and i am ".format(name) + str(ans),chat_id =query.message.chat.id ,message_id = query.message.message_id)
 
 @bot.message_handler(commands = ['result'])
 def display_result(message):
