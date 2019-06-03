@@ -75,13 +75,14 @@ def get_answer(message):
     UserInput = extract_args(message.text)
     UserInput.extend([""])
     name = UserInput.join()
+    rm.add(types.InlineKeyboardButton("already here", callback_data="already here"))
     rm.add(types.InlineKeyboardButton("on the way", callback_data="on the way"))
     rm.add(types.InlineKeyboardButton("still at home", callback_data="still at home"))
     rm.add(types.InlineKeyboardButton("not coming", callback_data="not coming"))
     bot.send_message(message.chat.id, '{} where are you?'.format(name), reply_markup=rm)
     
     
-@bot.callback_query_handler(func=lambda call: call.data in ["on the way","still at home","not coming"])
+@bot.callback_query_handler(func=lambda call: call.data in ["already here","on the way","still at home","not coming"])
 def test_callback(query):
     ans = query.data
     name = query.from_user.first_name
