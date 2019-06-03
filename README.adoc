@@ -50,3 +50,4 @@ Daniel Koh Chong Xiang, github: https://github.com/danielkoh94[@danielkoh94]
 == Acknowlegdements
 
 * Used the python pyTelegramBotAPI at https://github.com/eternnoir/pyTelegramBotAPI
+* Used code from video at https://www.youtube.com/watch?v=O0MAWtbg34g&t=359s
