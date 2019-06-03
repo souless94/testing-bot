@@ -74,7 +74,7 @@ def get_answer(message):
     rm = types.InlineKeyboardMarkup()
     UserInput = extract_args(message.text)
     UserInput.extend([""])
-    name = UserInput.join()
+    name = "".join(UserInput)
     rm.add(types.InlineKeyboardButton("already here", callback_data="already here"))
     rm.add(types.InlineKeyboardButton("on the way", callback_data="on the way"))
     rm.add(types.InlineKeyboardButton("still at home", callback_data="still at home"))
