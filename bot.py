@@ -72,17 +72,19 @@ def command_help(message):
 def get_answer(message):
     # adapted code from https://www.mindk.com/blog/how-to-develop-a-chat-bot/
     rm = types.InlineKeyboardMarkup()
-    rm.add(types.InlineKeyboardButton("yes", callback_data="yes"))
-    rm.add(types.InlineKeyboardButton("no", callback_data="no"))
-    bot.send_message(message.chat.id, 'Are you interested?', reply_markup=rm)
+    name = str(extract_args(message.text)[0])
+    rm.add(types.InlineKeyboardButton("on the way", callback_data="on the way"))
+    rm.add(types.InlineKeyboardButton("still at home", callback_data="still at home"))
+    rm.add(types.InlineKeyboardButton("not coming", callback_data="not coming"))
+    bot.send_message(message.chat.id, '{} where are you?'.format(name), reply_markup=rm)
     
     
-@bot.callback_query_handler(func=lambda call: call.data in ["yes","no"])
+@bot.callback_query_handler(func=lambda call: call.data in ["on the way","still at home","not coming"])
 def test_callback(query):
     ans = query.data
     name = query.from_user.first_name
     history[str(name)] =str(ans)
-    bot.answer_callback_query(query.id , text = "ok noted your answer is: " + str(ans))
+    bot.answer_callback_query(query.id , text = "eh i am {} and i am ".format(name) + str(ans))
     bot.edit_message_text(text= "your answer is : " + str(ans),chat_id =query.message.chat.id ,message_id = query.message.message_id)
 
 @bot.message_handler(commands = ['result'])
