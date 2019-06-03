@@ -72,7 +72,9 @@ def command_help(message):
 def get_answer(message):
     # adapted code from https://www.mindk.com/blog/how-to-develop-a-chat-bot/
     rm = types.InlineKeyboardMarkup()
-    name = str(extract_args(message.text)[0])
+    UserInput = extract_args(message.text)
+    UserInput.extend([""])
+    name = UserInput[0]
     rm.add(types.InlineKeyboardButton("on the way", callback_data="on the way"))
     rm.add(types.InlineKeyboardButton("still at home", callback_data="still at home"))
     rm.add(types.InlineKeyboardButton("not coming", callback_data="not coming"))
