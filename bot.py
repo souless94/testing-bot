@@ -81,7 +81,7 @@ def get_answer(message):
 def test_callback(query):
     ans = query.data
     name = query.message.chat.first_name
-    name2 = query.message.from_user.first_name
+    name2 = query.message.text
     print(name,"------------",name2)
     history[str(name)] =str(ans)
     bot.answer_callback_query(query.id , text = "ok noted your answer is: " + str(ans))
