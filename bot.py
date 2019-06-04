@@ -41,7 +41,7 @@ bot = telebot.TeleBot(token = token)
 
 ################################
 
-COMMANDS = ['bill','help','question','result','reset_poll']
+COMMANDS = {'bill':'bill [amount] [service charge] \n gets the bill amount after accounting for gst(7%) and service charge','help':'gets help on the commands','question':'question [name] \n creates a poll','result':'gets results of poll','reset_poll':'resets the poll'}
 history = {}
 # handlers
 
@@ -65,8 +65,11 @@ def send_bill(message):
 
 @bot.message_handler(commands = ['help'])
 def command_help(message):
-    string_of_commands = ",".join(COMMANDS)
-    bot.reply_to(message,"here are the commands : {}".format(string_of_commands))
+    help_msg = ""
+    for command, desc in COMMANDS.items():
+        help_msg += command + " : " + desc + "\n"
+        help_msg += "-----------------\n"
+    bot.reply_to(message,"Here are the commands: \n {}".format(help_msg))
  
 @bot.message_handler(commands = ['question'])
 def get_answer(message):
