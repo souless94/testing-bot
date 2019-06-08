@@ -78,6 +78,7 @@ def get_answer(message):
     UserInput = extract_args(message.text)
     UserInput.extend([""])
     name = "".join(UserInput)
+    rm.add(types.InlineKeyboardButton("going to be late", callback_data="going to be late"))
     rm.add(types.InlineKeyboardButton("already here", callback_data="already here"))
     rm.add(types.InlineKeyboardButton("on the way", callback_data="on the way"))
     rm.add(types.InlineKeyboardButton("still at home", callback_data="still at home"))
@@ -85,13 +86,20 @@ def get_answer(message):
     bot.send_message(message.chat.id, '{} where are you?'.format(name), reply_markup=rm)
     
     
-@bot.callback_query_handler(func=lambda call: call.data in ["already here","on the way","still at home","not coming"])
+@bot.callback_query_handler(func=lambda call: call.data in ["going to be late","already here","on the way","still at home","not coming"])
 def test_callback(query):
+    print(query)
     ans = query.data
     name = query.from_user.first_name
     history[str(name)] =str(ans)
     bot.answer_callback_query(query.id , text = "eh i am {} and i am ".format(name) + str(ans))
     bot.edit_message_text(text= "eh i am {} and i am ".format(name) + str(ans),chat_id =query.message.chat.id ,message_id = query.message.message_id)
+
+@bot.message_handler(commands = ['jk'])
+def jk(message):
+    jk_photo = open('jun_kai.jpg','rb')
+    jk_photo.close()
+    bot.send_photo(message.chat.id,jk_photo)
 
 @bot.message_handler(commands = ['result'])
 def display_result(message):
