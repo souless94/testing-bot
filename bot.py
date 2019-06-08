@@ -115,7 +115,7 @@ def test_callback(query):
 @bot.message_handler(commands=['jk'])
 def jk(message):
     global counter
-    if counter <= 5:
+    if counter < 5:
         counter += 1
         left = 5 - counter
         jk_photo = open('jun_kai.png', 'rb')
