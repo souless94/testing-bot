@@ -139,12 +139,8 @@ def display_result(message):
     reply_string = ""
     for name, response in history.items():
         reply_string += "{} \t {} \n".format(name, response)
-    positive_answer = list(history.values())
-    positive = list(filter(lambda x: x == "yes", positive_answer))
     reply_string += "------------------ \n" + \
         "People replied : {} \n".format(len(history))
-    reply_string += "People agreed : {} | People disagreed : {} \n".format(
-        len(positive), len(history) - len(positive))
     bot.send_message(message.chat.id, reply_string)
 
 
