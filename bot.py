@@ -117,9 +117,10 @@ def jk(message):
     global counter
     if counter <= 5:
         counter += 1
+        left = 5 - counter
         jk_photo = open('jun_kai.png', 'rb')
         bot.send_photo(message.chat.id, jk_photo, caption="hi")
-        bot.send_message(message.chat.id, "left : {}".format(counter))
+        bot.send_message(message.chat.id, "left : {}/5".format(left))
         jk_photo.close()
     else:
         bot.send_message(message.chat.id, "Don't spam ")
