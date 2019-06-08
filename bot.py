@@ -97,7 +97,7 @@ def test_callback(query):
 
 @bot.message_handler(commands = ['jk'])
 def jk(message):
-    jk_photo = open('jun_kai.jpg','rb')
+    jk_photo = open('jun_kai.png','rb')
     bot.send_photo(message.chat.id,jk_photo)
     jk_photo.close()
 
