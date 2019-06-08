@@ -74,6 +74,7 @@ def command_help(message):
  
 @bot.message_handler(commands = ['question'])
 def get_answer(message):
+    global sname
     # adapted code from https://www.mindk.com/blog/how-to-develop-a-chat-bot/
     rm = types.InlineKeyboardMarkup()
     UserInput = extract_args(message.text)
@@ -90,6 +91,7 @@ def get_answer(message):
     
 @bot.callback_query_handler(func=lambda call: call.data in ["going to be late","already here","on the way","still at home","not coming"])
 def test_callback(query):
+    global sname
     ans = query.data
     history[str(sname)] =str(ans)
     bot.answer_callback_query(query.id , text = "eh i am {} and i am ".format(sname) + str(ans))
