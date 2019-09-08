@@ -42,6 +42,9 @@ Example : /reset_poll
 
 Example : /help
 
+=== hidden easter eggs
+There is hidden easter eggs commands :).
+
 == Contributors
 Chia Wen Kai, github: https://github.com/souless94[@souless94]
 
