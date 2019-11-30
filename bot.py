@@ -2,7 +2,6 @@ import telebot
 import creds
 from telebot import types
 from flask import Flask, request
-from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import requests
 # helper functions
@@ -151,27 +150,6 @@ def reset_poll(message):
     history.clear()
     bot.send_message(message.chat.id, "poll reseted")
 
-
-
-
-@bot.message_handler(commands=['pdf_encrypt'])
-def pdf_encrypt(message):
-    
-    userInputs = extract_args(message.text)
-    filename = userInputs[0]
-    pdfFile = requests.get(filename)
-    pdfReader = PdfFileReader(pdfFile)
-    pdfWriter = PdfFileWriter()
-    for pageNum in range(pdfReader.numPages):
-        pdfWriter.addPage(pdfReader.getPage(pageNum))
-    pdfWriter.encrypt('wk94')
-    resultPdf = open('{}.pdf'.format(filename), 'wb')
-    pdfWriter.write(resultPdf)
-    pdfReader.close()
-    pdfFile.close()
-    resultPdf.close()
-    
-    bot.send_document(message.chat.id, resultPdf)
     
 
 ################################
