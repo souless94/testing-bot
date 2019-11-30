@@ -156,7 +156,7 @@ def reset_poll(message):
 
 @bot.message_handler(commands=['pdf_encrypt'])
 def pdf_encrypt(message):
-    bot.send_chat_action(message.chat.id, "upload_document",file_id="file_1")
+    bot.send_chat_action(message.chat.id, "upload_document")
 
 ################################
 # server routes
