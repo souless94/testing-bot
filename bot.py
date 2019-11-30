@@ -163,7 +163,7 @@ def pdf_encrypt(message):
     # output_pdf.appendPagesFromReader(input_pdf)
     # output_pdf.encrypt("password")
 
-    bot.send_document(the_file)
+    bot.send_document(message.chat.id,the_file)
     bot.send_message(message.chat.id, "file downloaded")
 
 ################################
