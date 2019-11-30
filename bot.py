@@ -2,7 +2,9 @@ import telebot
 import creds
 from telebot import types
 from flask import Flask, request
+from pikepdf import Pdf
 import os
+import requests
 # helper functions
 
 # def logToFile():
@@ -148,6 +150,13 @@ def display_result(message):
 def reset_poll(message):
     history.clear()
     bot.send_message(message.chat.id, "poll reseted")
+
+@bot.message_handler(commands=['pdf_encrypt'])
+def pdf_encrypt(message):
+    file_id= "AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf"
+    the_file = requests.get('https://api.telegram.org/file/bot{0}/{1}'.format(token,file_id))
+    bot.send_document(the_file)
+    bot.send_message(message.chat.id, "file downloaded")
 
 ################################
 # server routes
