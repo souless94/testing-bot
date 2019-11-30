@@ -151,22 +151,12 @@ def reset_poll(message):
     history.clear()
     bot.send_message(message.chat.id, "poll reseted")
 
+
+
+
 @bot.message_handler(commands=['pdf_encrypt'])
 def pdf_encrypt(message):
-    raw = message.document[2].file_id
-    path = raw+".pdf"
-    file_info = bot.get_file(raw)
-    downloaded_file = bot.download_file(file_info.file_path)
-    with open(path,'wb') as new_file:
-        new_file.write(downloaded_file)
-    new_file.close()
-    # with open("input.pdf", "rb") as in_file:
-    #     input_pdf = PdfFileReader(in_file)
-
-    # output_pdf = PdfFileWriter()
-    # output_pdf.appendPagesFromReader(input_pdf)
-    # output_pdf.encrypt("password")
-    bot.send_message(message.chat.id, "file downloaded")
+    bot.sendDocument(message.chat.id, "file_1")
 
 ################################
 # server routes
