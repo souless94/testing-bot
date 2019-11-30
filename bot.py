@@ -2,7 +2,7 @@ import telebot
 import creds
 from telebot import types
 from flask import Flask, request
-from pikepdf import Pdf
+from pyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import requests
 # helper functions
@@ -153,8 +153,16 @@ def reset_poll(message):
 
 @bot.message_handler(commands=['pdf_encrypt'])
 def pdf_encrypt(message):
-    file_id= "AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf"
-    the_file = requests.get('https://api.telegram.org/file/bot{0}/{1}'.format(token,file_id))
+    in_file= "AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf"
+    the_file = requests.get('https://api.telegram.org/file/bot{0}/{1}'.format(token,in_file))
+    
+    # with open("input.pdf", "rb") as in_file:
+    #     input_pdf = PdfFileReader(in_file)
+
+    # output_pdf = PdfFileWriter()
+    # output_pdf.appendPagesFromReader(input_pdf)
+    # output_pdf.encrypt("password")
+
     bot.send_document(the_file)
     bot.send_message(message.chat.id, "file downloaded")
 

@@ -9,9 +9,9 @@ itsdangerous==1.1.0
 Jinja2==2.10.3
 lxml==4.4.2
 MarkupSafe==1.1.1
-pikepdf==1.7.0
 pycparser==2.19
 pycryptodome==3.9.4
+PyPDF2==1.26.0
 pyTelegramBotAPI==3.6.6
 requests==2.22.0
 six==1.13.0
