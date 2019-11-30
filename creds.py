@@ -17,23 +17,22 @@ class AESCipher:
     def __init__( self, key ):
         self.key = key
 
-    # def encrypt( self, raw ):
-    #     raw = bytes(raw, 'utf-8')
-    #     raw = pad(raw,32)
-    #     iv = Random.new().read( AES.block_size )
-    #     cipher = AES.new( self.key, AES.MODE_CBC, iv )
-    #     return base64.b64encode( iv + cipher.encrypt( raw ) ).decode("utf-8")
+    def encrypt( self, raw ):
+        raw = bytes(raw, 'utf-8')
+        raw = pad(raw,32)
+        iv = Random.new().read( AES.block_size )
+        cipher = AES.new( self.key, AES.MODE_CBC, iv )
+        return base64.b64encode( iv + cipher.encrypt( raw ) ).decode("utf-8")
 
     def decrypt( self, enc ):
         enc = base64.b64decode(enc)
         iv = enc[:16]
         cipher = AES.new(self.key, AES.MODE_CBC, iv )
         return unpad(cipher.decrypt( enc[16:] ),32).decode("utf-8") 
-
-# aescipher = AESCipher("key")
-# encrypted =aescipher.encrypt("token")
-# print("------------------")
-# print(encrypted)
+# aes_key = "key"
+# print(aes_key)
+# aescipher = AESCipher(aes_key)
+# encrypted="encrypted"
 # print("---------------")
 # decrypted = aescipher.decrypt(encrypted)
 # print(decrypted)
