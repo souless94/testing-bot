@@ -153,17 +153,19 @@ def reset_poll(message):
 
 @bot.message_handler(commands=['pdf_encrypt'])
 def pdf_encrypt(message):
-    in_file= "AWS_Certified_Developer_Associate-Exam_Guide_EN_1.4.pdf"
-    the_file = requests.get('https://api.telegram.org/file/bot{0}/{1}'.format(token,in_file))
-    
+    raw = message.document[2].file_id
+    path = raw+".pdf"
+    file_info = bot.get_file(raw)
+    downloaded_file = bot.download_file(file_info.file_path)
+    with open(path,'wb') as new_file:
+        new_file.write(downloaded_file)
+    new_file.close()
     # with open("input.pdf", "rb") as in_file:
     #     input_pdf = PdfFileReader(in_file)
 
     # output_pdf = PdfFileWriter()
     # output_pdf.appendPagesFromReader(input_pdf)
     # output_pdf.encrypt("password")
-
-    bot.send_document(message.chat.id,the_file)
     bot.send_message(message.chat.id, "file downloaded")
 
 ################################
