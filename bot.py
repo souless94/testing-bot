@@ -5,6 +5,8 @@ from flask import Flask, request
 from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import requests
+from tkinter import filedialog
+from tkinter import Tk 
 # helper functions
 
 # def logToFile():
@@ -156,7 +158,12 @@ def reset_poll(message):
 
 @bot.message_handler(commands=['pdf_encrypt'])
 def pdf_encrypt(message):
-    bot.send_chat_action(message.chat.id, "upload_document")
+    root = Tk()
+    root.filename =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("pdf file","*.pdf"),("all files","*.*")))
+    print("file you getting from is" , root.filename)
+    doc = open(root.filename, 'rb')
+    doc.close()
+    bot.send_document(message.chat.id, doc)
 
 ################################
 # server routes
