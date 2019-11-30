@@ -159,19 +159,18 @@ def pdf_encrypt(message):
     
     userInputs = extract_args(message.text)
     filename = userInputs[0]
-    pdfFile = open(filename)
-    name = os.path.basename(pdfFile.name)
+    pdfFile = requests.get(filename)
     pdfReader = PdfFileReader(pdfFile)
     pdfWriter = PdfFileWriter()
     for pageNum in range(pdfReader.numPages):
         pdfWriter.addPage(pdfReader.getPage(pageNum))
     pdfWriter.encrypt('wk94')
-    resultPdf = open('{}.pdf'.format(name), 'wb')
+    resultPdf = open('{}.pdf'.format(filename), 'wb')
     pdfWriter.write(resultPdf)
     pdfReader.close()
     pdfFile.close()
     resultPdf.close()
-
+    
     bot.send_document(message.chat.id, resultPdf)
     
 
