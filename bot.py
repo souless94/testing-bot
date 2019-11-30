@@ -2,7 +2,7 @@ import telebot
 import creds
 from telebot import types
 from flask import Flask, request
-from pyPDF2 import PdfFileReader, PdfFileWriter
+from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import requests
 # helper functions
