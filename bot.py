@@ -5,8 +5,6 @@ from flask import Flask, request
 from PyPDF2 import PdfFileReader, PdfFileWriter
 import os
 import requests
-from tkinter import filedialog
-from tkinter import Tk 
 # helper functions
 
 # def logToFile():
@@ -22,6 +20,15 @@ def extract_args(args):
     """a function that takes in a string and then split in spaces and remove the command word"""
     return args.split()[1:]
 
+def get_the_file(filename):
+    try:
+        f = open(filename,'rb')
+        return f
+    # Do something with the file
+    except IOError:
+        print("File not accessible")
+    finally:
+        f.close()
 
 def is_positive_float(arg):
     try:
@@ -158,12 +165,22 @@ def reset_poll(message):
 
 @bot.message_handler(commands=['pdf_encrypt'])
 def pdf_encrypt(message):
-    root = Tk()
-    root.filename =  filedialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("pdf file","*.pdf"),("all files","*.*")))
-    print("file you getting from is" , root.filename)
-    doc = open(root.filename, 'rb')
-    doc.close()
-    bot.send_document(message.chat.id, doc)
+    
+    userInputs = extract_args(message.text)
+    filename = userInputs[0]
+    pdfFile = get_the_file(filename)
+    name = os.path.basename(pdfFile.name)
+    pdfReader = PdfFileReader(pdfFile)
+    pdfWriter = PdfFileWriter()
+    for pageNum in range(pdfReader.numPages):
+        pdfWriter.addPage(pdfReader.getPage(pageNum))
+    pdfWriter.encrypt('wk94')
+    resultPdf = open('{}.pdf'.format(name), 'wb')
+    pdfWriter.write(resultPdf)
+    resultPdf.close()
+
+    bot.send_document(message.chat.id, resultPdf)
+    
 
 ################################
 # server routes
