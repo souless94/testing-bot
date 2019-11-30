@@ -20,15 +20,6 @@ def extract_args(args):
     """a function that takes in a string and then split in spaces and remove the command word"""
     return args.split()[1:]
 
-def get_the_file(filename):
-    try:
-        f = open(filename,'rb')
-        return f
-    # Do something with the file
-    except IOError:
-        print("File not accessible")
-    finally:
-        f.close()
 
 def is_positive_float(arg):
     try:
@@ -168,7 +159,7 @@ def pdf_encrypt(message):
     
     userInputs = extract_args(message.text)
     filename = userInputs[0]
-    pdfFile = get_the_file(filename)
+    pdfFile = open(filename)
     name = os.path.basename(pdfFile.name)
     pdfReader = PdfFileReader(pdfFile)
     pdfWriter = PdfFileWriter()
@@ -177,6 +168,8 @@ def pdf_encrypt(message):
     pdfWriter.encrypt('wk94')
     resultPdf = open('{}.pdf'.format(name), 'wb')
     pdfWriter.write(resultPdf)
+    pdfReader.close()
+    pdfFile.close()
     resultPdf.close()
 
     bot.send_document(message.chat.id, resultPdf)
