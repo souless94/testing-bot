@@ -2,21 +2,41 @@
 from Crypto import Random
 from Crypto.Cipher import AES
 from cryptoPad import unpad
+from cryptoPad import pad
 import base64
 import os
 
 # reused code for crpytoPad from https://github.com/dlitz/pycrypto/blob/master/lib/Crypto/Util/Padding.py
 _ciphertext = os.environ.get('ciphertext')
-_id = os.environ.get('id')
-key_size = [16,24,32] # aes 128,192,256
-def aes_decrypt(ciphertext):
-    ctxt = base64.b64decode(ciphertext)
-    iv = ctxt[:16]
-    enc = ctxt[16:]
-    aeskey = base64.b64decode(_id)
-    cipher = AES.new(aeskey,AES.MODE_CBC,iv)
-    plaintext = unpad(cipher.decrypt(enc),32)
-    plaintext = plaintext.decode("utf-8")
-    return plaintext
+_aes_key = os.environ.get('aes_key')
+import base64
+from Crypto.Cipher import AES
+from Crypto import Random
 
-token = aes_decrypt(_ciphertext)
+class AESCipher:
+    def __init__( self, key ):
+        self.key = key
+
+    # def encrypt( self, raw ):
+    #     raw = bytes(raw, 'utf-8')
+    #     raw = pad(raw,32)
+    #     iv = Random.new().read( AES.block_size )
+    #     cipher = AES.new( self.key, AES.MODE_CBC, iv )
+    #     return base64.b64encode( iv + cipher.encrypt( raw ) ).decode("utf-8")
+
+    def decrypt( self, enc ):
+        enc = base64.b64decode(enc)
+        iv = enc[:16]
+        cipher = AES.new(self.key, AES.MODE_CBC, iv )
+        return unpad(cipher.decrypt( enc[16:] ),32).decode("utf-8") 
+
+# aescipher = AESCipher("key")
+# encrypted =aescipher.encrypt("token")
+# print("------------------")
+# print(encrypted)
+# print("---------------")
+# decrypted = aescipher.decrypt(encrypted)
+# print(decrypted)
+
+aescipher = AESCipher(_aes_key)
+token = aescipher.decrypt(_ciphertext)
