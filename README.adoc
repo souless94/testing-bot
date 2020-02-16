@@ -44,6 +44,7 @@ Example : /help
 
 === hidden easter eggs
 There is hidden easter eggs commands :).
+Please look at source code to see the commands :)
 
 == Contributors
 Chia Wen Kai, github: https://github.com/souless94[@souless94]
