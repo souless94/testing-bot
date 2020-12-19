@@ -32,6 +32,8 @@ def validate(date_text):
 def portfolio_check(date_invested):
     if (validate(date_invested)):
         return "Wrong input, please enter the date you invested : (YYYY-MM-DD)"
+    
+    print("date_invested : " ,date_invested)
     equities = ["G3B.SI","CFA.SI","LG9.SI","INDA"]
     fixed_income = ["A35.SI","MBH.SI"]
     stocks = equities + fixed_income
@@ -45,7 +47,8 @@ def portfolio_check(date_invested):
     # looping over tickers and creating a dataframe with close prices
     for ticker in stocks:
         cl_price[ticker] = yf.download(ticker,start,end)["Close"]
-        
+    
+    print("============= data downloaded ==================")
     df = cl_price.copy()
     df.dropna(inplace=True)
 
