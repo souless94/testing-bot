@@ -21,6 +21,7 @@ pandas==1.1.5
 pipenv==2020.11.15
 pipx==0.15.6.0
 pycparser==2.20
+pycryptodome==3.9.9
 pyparsing==2.4.7
 pyTelegramBotAPI==3.7.4
 python-dateutil==2.8.1
