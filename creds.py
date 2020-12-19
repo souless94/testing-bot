@@ -1,5 +1,5 @@
 # aes 256
-from Crypto import Random
+from Cryptodome import Random
 from Cryptodome.Cipher import AES
 from cryptoPad import unpad
 from cryptoPad import pad
