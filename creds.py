@@ -1,6 +1,6 @@
 # aes 256
-from Cryptodome import Random
-from Cryptodome.Cipher import AES
+from Crypto import Random
+from Crypto.Cipher import AES
 from cryptoPad import unpad
 from cryptoPad import pad
 import base64
@@ -9,6 +9,7 @@ import os
 # reused code for crpytoPad from https://github.com/dlitz/pycrypto/blob/master/lib/Crypto/Util/Padding.py
 _ciphertext = os.environ.get('ciphertext')
 _aes_key = os.environ.get('aes_key')
+
 
 class AESCipher:
     def __init__( self, key ):
