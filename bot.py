@@ -4,6 +4,7 @@ from telebot import types
 from flask import Flask, request
 import os
 import requests
+from check_portfolio import portfolio_check
 # helper functions
 
 # def logToFile():
@@ -150,6 +151,13 @@ def reset_poll(message):
     history.clear()
     bot.send_message(message.chat.id, "poll reseted")
 
+@bot.message_handler(commands=['portfolio'])
+def display_portfolio(message):
+    UserInput = extract_args(message.text)
+    UserInput.extend([""])
+    the_date = " ".join(UserInput)
+    summary = portfolio_check(the_date)
+    bot.reply_to(message, "summary of your dbs portfolio: \n {}".format(summary))
     
 
 ################################
