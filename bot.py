@@ -46,7 +46,7 @@ bot = telebot.TeleBot(token=token)
 ################################
 
 COMMANDS = {'bill': 'bill [amount] [service charge] \n gets the bill amount after accounting for gst(7%) and service charge', 'help': 'gets help on the commands',
-            'question': 'question [name] \n creates a poll', 'result': 'gets results of poll', 'reset_poll': 'resets the poll'}
+            'question': 'question [name] \n creates a poll', 'result': 'gets results of poll', 'reset_poll': 'resets the poll','portfolio':'get dbs portfolio status based on date (YYYY-MM-DD)'}
 history = {}
 sname = ""  # name to store
 counter = 0

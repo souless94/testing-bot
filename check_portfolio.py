@@ -59,6 +59,8 @@ def portfolio_check(date_invested):
     details ={}
     days_difference = end - dt.datetime.strptime(date_invested,'%Y-%m-%d')
     days_difference = days_difference.days
+    
+    print("============== settings set =====================")
 
     for equity in equities:
         price = round(df[equity].loc[date_invested],2)
