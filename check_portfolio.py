@@ -28,7 +28,7 @@ def validate(date_text):
         print("is business day ? : ",calendar.is_business_day(date_text))
         end = dt.datetime.today()
         print("is today a business day ? ",calendar.is_business_day(end))
-        return calendar.is_business_day(the_date) # and calendar.is_business_day(end)
+        return calendar.is_business_day(the_date) and calendar.is_business_day(end)
     except ValueError as e:
         print(e)
         return False
@@ -94,9 +94,13 @@ def portfolio_check(date_invested):
         print("===================== details ======================")
         print(details)
 
+        today = str(dt.datetime.today().strftime("%Y-%m-%d"))
+        if ( df.loc[date_invested].empty):
+            return "there is no data for today : " + date_invested
+
         for the_stock in stocks:
             print("=============",the_stock,"==============")
-            the_price = round(df[the_stock][-1],2)
+            the_price = round(df[the_stock].loc[today],2)
             old_price = details[the_stock]['price']
             current_stock_returns = (the_price-old_price)*details[the_stock]['units']
             details['current value'] += the_price* details[the_stock]['units']
