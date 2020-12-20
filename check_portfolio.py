@@ -57,8 +57,9 @@ def portfolio_check(date_invested):
     fixed_percent = 0.43/len(fixed_income)
     details ={}
     print("============== here2 =======================")
-    days_difference = end - dt.datetime.strptime(date_invested,'%Y-%m-%d')
-    print("=============================",days_difference,"=================================")
+    invested_date = dt.datetime.strptime(date_invested,'%Y-%m-%d')
+    days_difference = end - invested_date
+    print("=============================",invested_date,"=================================")
     days_difference = days_difference.days
     
     print("============== settings set =====================")
