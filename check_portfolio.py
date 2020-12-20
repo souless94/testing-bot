@@ -35,7 +35,11 @@ def validate(date_text):
 def portfolio_check(date_invested):
     
     if (validate(date_invested)== False):
-        return "Wrong input, please enter the date you invested : (YYYY-MM-DD)"
+        end = dt.datetime.today()
+        if calendar.is_business_day(end) == False:
+            return "Today is a not a business day"
+        else:
+            return "Wrong input, please enter the date you invested : (YYYY-MM-DD)"
     else:
         equities = ["G3B.SI","CFA.SI","LG9.SI","INDA"]
         fixed_income = ["A35.SI","MBH.SI"]
