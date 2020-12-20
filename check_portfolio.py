@@ -23,6 +23,7 @@ calendar = Calendar(
 # NIKKO SGD Investment Grade Corporate Bond ETF
 def validate(date_text):
     try:
+        print("date_text : ",date_text)
         the_date = dt.datetime.strptime(date_text, '%Y-%m-%d')
         print("is business day ? : ",calendar.is_business_day(date_text))
         return calendar.is_business_day(the_date)
@@ -36,7 +37,6 @@ def portfolio_check(date_invested):
     if (validate(date_invested)== False):
         return "Wrong input, please enter the date you invested : (YYYY-MM-DD)"
     else:
-        print("date_invested : " ,date_invested)
         equities = ["G3B.SI","CFA.SI","LG9.SI","INDA"]
         fixed_income = ["A35.SI","MBH.SI"]
         stocks = equities + fixed_income
@@ -46,23 +46,21 @@ def portfolio_check(date_invested):
         # get five years of data
         start = dt.datetime.today()-dt.timedelta(days=365*5)
         end = dt.datetime.today()
-        df = pd.DataFrame()
+        cl_prices = pd.DataFrame()
         # looping over tickers and creating a dataframe with close prices
         for ticker in stocks:
-            df[ticker] = yf.download(ticker,start,end)["Close"]
+            cl_prices[ticker] = yf.download(ticker,start,end)["Close"]
         
         print("============= data downloaded ==================")
+        df = cl_prices.copy()
         df.dropna(inplace=True)
-        print("============== here1 =======================")
         amount = 3000 # 5% is cash
         cash = 0.05*3000
         equity_percent = 0.52/len(equities)
         fixed_percent = 0.43/len(fixed_income)
         details ={}
-        print("============== here2 =======================")
         invested_date = dt.datetime.strptime(date_invested,'%Y-%m-%d')
         days_difference = end - invested_date
-        print("=============================",invested_date,"=================================")
         days_difference = days_difference.days
         
         print("============== settings set =====================")
@@ -83,6 +81,8 @@ def portfolio_check(date_invested):
 
         details['returns']=0
         details['current value']=cash - offset
+        print("===================== details ======================")
+        print(details)
 
         for the_stock in stocks:
             print("=============",the_stock,"==============")
