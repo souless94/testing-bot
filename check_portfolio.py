@@ -41,7 +41,7 @@ def portfolio_check(date_invested):
     print("fixed: ",fixed_income)
     print("stocks:" , stocks)
     # get five years of data
-    start = dt.datetime.today()-dt.timedelta(days=365*2)
+    start = dt.datetime.today()-dt.timedelta(days=365*5)
     end = dt.datetime.today()
     df = pd.DataFrame()
     # looping over tickers and creating a dataframe with close prices
@@ -49,15 +49,16 @@ def portfolio_check(date_invested):
         df[ticker] = yf.download(ticker,start,end)["Close"]
     
     print("============= data downloaded ==================")
-    print(df.head())
-    print(df.isnull().sum())
-
+    df.dropna(inplace=True)
+    print("============== here1 =======================")
     amount = 3000 # 5% is cash
     cash = 0.05*3000
     equity_percent = 0.52/len(equities)
     fixed_percent = 0.43/len(fixed_income)
     details ={}
+    print("============== here2 =======================")
     days_difference = end - dt.datetime.strptime(date_invested,'%Y-%m-%d')
+    print("=============================",days_difference,"=================================")
     days_difference = days_difference.days
     
     print("============== settings set =====================")
