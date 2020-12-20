@@ -31,7 +31,7 @@ def validate(date_text):
 
 
 def portfolio_check(date_invested):
-    if (validate(date_invested)):
+    if (validate(date_invested)== False):
         return "Wrong input, please enter the date you invested : (YYYY-MM-DD)"
     else:
         print("date_invested : " ,date_invested)
