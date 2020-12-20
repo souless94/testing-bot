@@ -50,7 +50,7 @@ def portfolio_check(date_invested):
     
     print("============= data downloaded ==================")
     print(df.head())
-    df = df.dropna()
+    print(df.isnull().sum())
 
     amount = 3000 # 5% is cash
     cash = 0.05*3000
