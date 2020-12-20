@@ -72,7 +72,8 @@ def portfolio_check(date_invested):
         days_difference = days_difference.days
         
         print("============== settings set =====================")
-        print(df.loc[date_invested])
+        if ( df.loc[date_invested].empty):
+            return "there is no data for the requested invested date : " + date_invested
 
         for equity in equities:
             price = round(df[equity].loc[date_invested],2)
