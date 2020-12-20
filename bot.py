@@ -155,7 +155,7 @@ def reset_poll(message):
 def display_portfolio(message):
     UserInput = extract_args(message.text)
     UserInput.extend([""])
-    the_date = " ".join(UserInput)
+    the_date = "".join(UserInput).strip(' \t\r\n')
     summary = portfolio_check(the_date)
     print("summary")
     print(summary)
