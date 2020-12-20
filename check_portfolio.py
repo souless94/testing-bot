@@ -26,7 +26,9 @@ def validate(date_text):
         print("date_text : ",date_text)
         the_date = dt.datetime.strptime(date_text, '%Y-%m-%d')
         print("is business day ? : ",calendar.is_business_day(date_text))
-        return calendar.is_business_day(the_date)
+        end = dt.datetime.today()
+        print("is today a business day ? ",calendar.is_business_day(end))
+        return calendar.is_business_day(the_date) # and calendar.is_business_day(end)
     except ValueError as e:
         print(e)
         return False
@@ -58,6 +60,8 @@ def portfolio_check(date_invested):
         print("============= data downloaded ==================")
         df = cl_prices.copy()
         df.dropna(inplace=True)
+        df.sort_index(ascending=False,inplace=True)
+        print(df.head(30))
         amount = 3000 # 5% is cash
         cash = 0.05*3000
         equity_percent = 0.52/len(equities)
