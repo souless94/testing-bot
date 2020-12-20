@@ -7,7 +7,7 @@ from business.calendar import Calendar
 calendar = Calendar(
   working_days=["monday", "tuesday", "wednesday", "thursday", "friday"],
   # array items are either parseable date strings, or real datetime.date objects
-  holidays=["January 1st, 2020", "April 10th, 2020"],
+  holidays=[],
   extra_working_dates=[],
 )
 
@@ -24,15 +24,16 @@ calendar = Calendar(
 def validate(date_text):
     try:
         the_date = dt.datetime.strptime(date_text, '%Y-%m-%d')
-        print("is business day ? : ",calendar.is_business_day(the_date))
+        print("is business day ? : ",calendar.is_business_day(date_text))
         return calendar.is_business_day(the_date)
-    except ValueError:
+    except ValueError as e:
+        print(e)
         return False
 
 
 def portfolio_check(date_invested):
+    
     if (validate(date_invested)== False):
-        print("is business day ? : ",calendar.is_business_day(the_date))
         return "Wrong input, please enter the date you invested : (YYYY-MM-DD)"
     else:
         print("date_invested : " ,date_invested)
