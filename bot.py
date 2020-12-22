@@ -157,20 +157,16 @@ def display_portfolio(message):
     UserInput = extract_args(message.text)
     UserInput.extend(["test",0])
     print(UserInput)
-
-    values[0] = "".join(UserInput[0]).strip(' \t\r\n')
-    values[1] = UserInputs[1]
-    the_date = str(values[0])
-    amount = values[1]
+    the_date = str(UserInput[0])
+    amount = float(UserInput[1])
+    print(the_date,amount)
     toProceed = is_positive_float(amount)
-    print(values)
     print('toProceed',toProceed)
     if (toProceed == False):
         bot.reply_to(message,'amount must be positive')
     elif ( amount < 1000 ):
         bot.reply_to(message,'amount must be > $1000')
     else:
-        amount = float(values[1])
         summary = portfolio_check(the_date,amount)
         bot.reply_to(message, "summary of your dbs portfolio: \n {}".format(summary))
     
