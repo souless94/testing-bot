@@ -158,7 +158,7 @@ def display_portfolio(message):
     UserInput.extend(["test",0])
     print(UserInput)
 
-    values[0] = userInputs[0]
+    values[0] = "".join(userInputs[0]).strip(' \t\r\n')
     values[1] = userInputs[1]
     the_date = str(values[0])
     amount = values[1]
