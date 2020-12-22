@@ -100,6 +100,9 @@ def portfolio_check(date_invested):
 
         for the_stock in stocks:
             print("=============",the_stock,"==============")
+            print(df[the_stock].loc[today])
+            print(df[the_stock].loc[today][0])
+            print(details.loc[the_stock]['units'])
             the_price = round(df[the_stock].loc[today][0],2)
             old_price = details[the_stock].loc['price'][0]
             print('the_price is : ',the_price)
