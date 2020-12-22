@@ -158,8 +158,8 @@ def display_portfolio(message):
     UserInput.extend(["test",0])
     print(UserInput)
 
-    values[0] = "".join(userInputs[0]).strip(' \t\r\n')
-    values[1] = userInputs[1]
+    values[0] = "".join(UserInput[0]).strip(' \t\r\n')
+    values[1] = UserInputs[1]
     the_date = str(values[0])
     amount = values[1]
     toProceed = is_positive_float(amount)
