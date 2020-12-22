@@ -156,6 +156,8 @@ def display_portfolio(message):
     values = ["valid_date", 0] 
     UserInput = extract_args(message.text)
     UserInput.extend(["test",0])
+    print(UserInput)
+
     values[0] = userInputs[0]
     values[1] = userInputs[1]
     the_date = str(values[0])
