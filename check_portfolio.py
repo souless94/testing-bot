@@ -90,7 +90,7 @@ def portfolio_check(date_invested):
         offset = ans - amount
 
         details['returns']=0
-        details['current value']=cash - offset
+        details['current value']=round(cash - offset,2)
         print("===================== details ======================")
         print(details)
 
