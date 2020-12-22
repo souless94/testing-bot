@@ -59,7 +59,7 @@ def portfolio_check(date_invested):
         
         print("============= data downloaded ==================")
         df = cl_prices.copy()
-        df.dropna(inplace=True)
+        df.fillna(method='ffill',inplace=True)
         df.sort_index(ascending=False,inplace=True)
         print(df.head(30))
         amount = 3000 # 5% is cash

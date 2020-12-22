@@ -157,8 +157,6 @@ def display_portfolio(message):
     UserInput.extend([""])
     the_date = "".join(UserInput).strip(' \t\r\n')
     summary = portfolio_check(the_date)
-    print("summary")
-    print(summary)
     bot.reply_to(message, "summary of your dbs portfolio: \n {}".format(summary))
     
 
