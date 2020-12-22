@@ -162,7 +162,7 @@ def display_portfolio(message):
     amount = values[1]
     toProceed = is_positive_float(amount)
     if (toProceed == False):
-        bot.reply_to(message,'amount must be positive")
+        bot.reply_to(message,'amount must be positive')
     elif ( amount < 1000 ):
         bot.reply_to(message,'amount must be > $1000")
     else:
