@@ -102,10 +102,12 @@ def portfolio_check(date_invested):
             print("=============",the_stock,"==============")
             the_price = round(df[the_stock].loc[today][0],2)
             old_price = details[the_stock].loc['price'][0]
+            print('the_price is : ',the_price)
+            print('old_price is : ',old_price)
             current_stock_returns = (the_price-old_price)*details.loc[the_stock]['units'][0]
+            print(current_stock_returns)
             details['current value'] += the_price* details[the_stock]['units'][0]
             details['returns']+=current_stock_returns
-            print(current_stock_returns)
 
         # summary = {'date_invested':date_invested,'days_difference':days_difference,'cash':cash,
         # 'returns':details['returns'],'current_value':details['current value']}
