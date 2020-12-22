@@ -76,12 +76,12 @@ def portfolio_check(date_invested):
             return "there is no data for the requested invested date : " + date_invested
 
         for equity in equities:
-            price = round(df[equity].loc[date_invested],2)
-            units = round(equity_percent*amount/df[equity].loc[date_invested],2)
+            price = round(df[equity].loc[date_invested][0],2)
+            units = round(equity_percent*amount/df[equity].loc[date_invested][0],2)
             details[equity] = {"units":units,"price":price}
         for fixed in fixed_income:
-            price = round(df[fixed].loc[date_invested],2)
-            units = round(fixed_percent*amount/df[fixed].loc[date_invested],2)
+            price = round(df[fixed].loc[date_invested][0],2)
+            units = round(fixed_percent*amount/df[fixed].loc[date_invested][0],2)
             details[fixed] = {"units":units,"price":price}
         ans = 0
         for items in stocks:
@@ -100,10 +100,10 @@ def portfolio_check(date_invested):
 
         for the_stock in stocks:
             print("=============",the_stock,"==============")
-            the_price = round(df[the_stock].loc[today],2)
-            old_price = details[the_stock]['price']
-            current_stock_returns = (the_price-old_price)*details[the_stock]['units']
-            details['current value'] += the_price* details[the_stock]['units']
+            the_price = round(df[the_stock].loc[today][0],2)
+            old_price = details[the_stock].loc['price'][0]
+            current_stock_returns = (the_price-old_price)*details.loc[the_stock]['units'][0]
+            details['current value'] += the_price* details[the_stock]['units'][0]
             details['returns']+=current_stock_returns
             print(current_stock_returns)
 
