@@ -161,6 +161,8 @@ def display_portfolio(message):
     the_date = str(values[0])
     amount = values[1]
     toProceed = is_positive_float(amount)
+    print(values)
+    print('toProceed',toProceed)
     if (toProceed == False):
         bot.reply_to(message,'amount must be positive')
     elif ( amount < 1000 ):
