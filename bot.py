@@ -164,7 +164,7 @@ def display_portfolio(message):
     if (toProceed == False):
         bot.reply_to(message,'amount must be positive')
     elif ( amount < 1000 ):
-        bot.reply_to(message,'amount must be > $1000")
+        bot.reply_to(message,'amount must be > $1000')
     else:
         amount = float(values[1])
         summary = portfolio_check(the_date,amount)
