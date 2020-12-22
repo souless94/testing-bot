@@ -34,7 +34,7 @@ def validate(date_text):
         return False
 
 
-def portfolio_check(date_invested):
+def portfolio_check(date_invested, amount):
     
     if (validate(date_invested)== False):
         end = dt.datetime.today()
@@ -61,9 +61,7 @@ def portfolio_check(date_invested):
         df = cl_prices.copy()
         df.fillna(method='ffill',inplace=True)
         df.sort_index(ascending=False,inplace=True)
-        print(df.head(30))
-        amount = 3000 # 5% is cash
-        cash = 0.05*3000
+        cash = 0.05*amount
         equity_percent = 0.52/len(equities)
         fixed_percent = 0.43/len(fixed_income)
         details ={}
@@ -118,7 +116,7 @@ def portfolio_check(date_invested):
         summary = "=================== SUMMARY ===================="+"\n" \
                 + "date invested : " + str(date_invested) +"\n" \
                 + "days invested : "+ str(days_difference) +"\n" \
-                + "cash" + str(cash) +"\n" \
+                + "cash : " + str(cash) +"\n" \
                 + "returns : " + str(details['returns']) + "\n" \
                 + "current value : " + str(details['current value']) +"\n" \
                 + "========================================="

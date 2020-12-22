@@ -153,11 +153,22 @@ def reset_poll(message):
 
 @bot.message_handler(commands=['portfolio'])
 def display_portfolio(message):
+    values = ["valid_date", 0] 
     UserInput = extract_args(message.text)
-    UserInput.extend([""])
-    the_date = "".join(UserInput).strip(' \t\r\n')
-    summary = portfolio_check(the_date)
-    bot.reply_to(message, "summary of your dbs portfolio: \n {}".format(summary))
+    UserInput.extend(["test",0])
+    values[0] = userInputs[0]
+    values[1] = userInputs[1]
+    the_date = str(values[0])
+    amount = values[1]
+    toProceed = is_positive_float(amount)
+    if (toProceed == False):
+        bot.reply_to(message,'amount must be positive")
+    elif ( amount < 1000 ):
+        bot.reply_to(message,'amount must be > $1000")
+    else:
+        amount = float(values[1])
+        summary = portfolio_check(the_date,amount)
+        bot.reply_to(message, "summary of your dbs portfolio: \n {}".format(summary))
     
 
 ################################
