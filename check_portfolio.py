@@ -112,8 +112,8 @@ def portfolio_check(date_invested):
             details['current value'] += the_price* details[the_stock]['units']
             details['returns']+=current_stock_returns
 
-        # summary = {'date_invested':date_invested,'days_difference':days_difference,'cash':cash,
-        # 'returns':details['returns'],'current_value':details['current value']}
+        summary = {'date_invested':date_invested,'days_difference':days_difference,'cash':cash,'returns':details['returns'],'current_value':details['current value']}
+        print(summary)
         summary = "=================== SUMMARY ===================="+"\n" \
                 + "date invested : " + str(date_invested) +"\n" \
                 + "days invested : "+ str(days_difference) +"\n" \
