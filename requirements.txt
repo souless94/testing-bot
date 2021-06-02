@@ -29,7 +29,7 @@ pytz==2020.4
 PyYAML==5.3.1
 requests==2.25.1
 six==1.15.0
-urllib3==1.26.2
+urllib3==1.26.5
 userpath==1.4.1
 virtualenv==20.2.2
 virtualenv-clone==0.5.4
