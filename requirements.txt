@@ -18,7 +18,7 @@ multitasking==0.0.9
 numpy==1.19.3
 packaging==20.8
 pandas==1.1.5
-pipenv==2020.11.15
+pipenv==2022.1.8
 pipx==0.15.6.0
 pycparser==2.20
 pycryptodome==3.9.9
